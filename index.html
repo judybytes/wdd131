@@ -3,44 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Dieketseng Motsetse: A student portfolio showcasing web development skills in HTML, CSS, and JavaScript.">
     <meta name="author" content="Dieketseng Judith Motsetse">
-    <title>"WDD 131 - Dynamic Web Fundamentals - Dieketseng Motsetse"</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Dieketseng Judith Motsetse</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@100;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.css"> <!-- Link to CSS file -->
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
 
     <header>
-        <h1>WDD 131 - Dynamic Web Fundametals - Dieketseng Judith Motsetse</h1>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Dieketseng Judith Motsetse</h1>
         <nav>
             <a href="https://www.linkedin.com/in/dieketsengmotsetse">LinkedIn</a>
             <a href="https://byui.instructure.com/">I-Learn</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p7#p7">Scripture</a>
-            <a href="#">Final Project</a>
+            <a href="#projects">Projects</a>
         </nav>
     </header>
 
     <main>
-        <section class="card">
-            <div class="About Me">
+        <section class="card" id="about">
+            <div class="about me box card">
                 <h2>About Me</h2>
                 <p>
                     Hi there! I'm Dieketseng Judith Motsetse, a passionate web development student from Vanderbijlpark, South Africa. I'm eager to explore the exciting world of coding. I'm particularly interested in crafting user-friendly and visually appealing websites. In addition to coding, I love to cook and spend time with my family. Through this course, I hope to enhance my skills in HTML, CSS, and JavaScript, and ultimately contribute to the creation of innovative web solutions.
                 </p>
             </div>
-            <img src="images/about-me.jpg" alt="About me image">
+            <img src="images/about-me.jpg" alt="About me image" class="card-img">
         </section>
 
-        <section class="card">
+        <section class="card" id="projects">
             <h2>My Projects</h2>
-            <img src="images/projects.jpg" alt="Projects image">
-            <p>Here are some of my recent projects that showcase my skills in front-end development and design.</p>
-            <a href="#">See Projects</a>
+            <div class="project-content">
+                <!-- Project description -->
+                <div class="project-description">
+                    <p>Here are some of my recent projects that showcase my skills in front-end development and design. I have worked on various projects that focus on HTML, CSS, and JavaScript to create engaging and functional websites.</p>
+                </div>
+                
+                <!-- Project image -->
+                <div class="project-image">
+                    <img src="images/projects.webp" alt="Projects image">
+                </div>
+            </div>
+            
+            <!-- Anchor links for each project -->
+            <div class="project-links">
+                <a href="#project1">Project 1</a> |
+                <a href="#project2">Project 2</a> |
+                <a href="#project3">Project 3</a>
+            </div>
         </section>
+
+        <!-- Replace empty sections with div elements -->
+        <div id="project1"></div>
+        <div id="project2"></div>
+        <div id="project3"></div>
     </main>
 
     <footer>

@@ -4,8 +4,8 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    color: #000000; /* Black text color */
-    background-color: #FFF6F9; /* Light blush background */
+    color: #000000;
+    background-color: #FFF6F9;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,13 +13,13 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #D8A7B1; /* Dusty pink */
-    color: #FFFFFF; /* White text */
+    background-color: #D8A7B1;
+    color: #FFFFFF;
     padding: 1.5em;
     text-align: center;
     width: 100%;
     font-weight: 600;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -32,18 +32,18 @@ nav {
     justify-content: center;
     gap: 1.5em;
     padding: 1em 0;
-    background-color: #D8A7B1; /* Match header color */
+    background-color: #D8A7B1;
 }
 
 nav a {
-    color: #000000; /* White text for links */
+    color: #000000;
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #0000ff; /* Lighter pink on hover */
+    color: #0000ff;
 }
 
 /* Main Content Styling */
@@ -55,40 +55,27 @@ main {
     margin: 2em 0;
 }
 
-/* About Me Box Styling */
-.about-me-box {
-    border: 2px solid #D8A7B1; /* Dusty pink border */
-    padding: 1em;
-    border-radius: 10px;
-    background-color: #FFFFFF; /* White background */
-    color: #000000; /* Black text */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-}
-
 /* Card Styling */
 .card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFFFFF; /* White background for cards */
-    color: #000000; /* Black text for cards */
+    background-color: #FFFFFF;
+    color: #000000;
     padding: 1em;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card h2 {
-    margin-top: 0;
     font-weight: 600;
-    color: #444444; /* Dark grey text */
+    color: #444444;
 }
 
+/* About Me Image Styling */
 .card img {
     width: 100%;
     height: auto;
@@ -97,41 +84,71 @@ main {
     margin: 1em 0;
 }
 
-.card p, .card a {
-    margin: 0.5em 0;
-    color: #333333; /* Dark grey text */
-    font-weight: 400;
+/* About Me Box Styling */
+.about-me-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    gap: 2em; /* Space between content and image */
 }
 
-/* Button Styling */
-.card a {
-    display: inline-block;
-    padding: 0.5em 1em;
-    background-color: #D8A7B1; /* Dusty pink */
-    color: #FFFFFF; /* White text */
-    border-radius: 5px;
+.about-me-box .about-me-content {
+    flex: 1;
+}
+
+/* About Me Image Styling */
+.about-me-box .about-me-image {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+/* Project Section Styling */
+.project-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* Anchor Links Styling */
+.project-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-links a {
+    color: #D8A7B1;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
-.card a:hover {
-    background-color: #b78591; /* Darker pink on hover */
+.project-links a:hover {
+    color: #b78591;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
-    background-color: #e1edf2; /* Soft pastel blue */
-    color: #333333; /* Dark grey text */
+    background-color: #e1edf2;
+    color: #333333;
     padding: 1em;
     width: 100%;
     font-weight: 300;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    margin: 0.5em 0;
 }
 
 /* Typography Enhancements */
@@ -149,7 +166,7 @@ p {
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
-    .card {
+    .project-content {
         flex-direction: column;
         align-items: center;
     }
@@ -159,8 +176,18 @@ p {
         align-items: center;
     }
 
-    .card img {
+    .project-image img {
+        max-width: 100%;
+    }
+
+    /* Responsive for About Me Box */
+    .about-me-box {
+        flex-direction: column;
+    }
+
+    .about-me-box .about-me-image {
         max-width: 100%;
     }
 }
+
 
