@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #0000ff;
+    color: #8a0950;
 }
 
 /* Main Content Styling */
@@ -131,23 +131,23 @@ main {
 }
 
 .project-links a {
-    color: #D8A7B1;
+    color: #9c132e;
     text-decoration: none;
     font-weight: bold;
 }
 
 .project-links a:hover {
-    color: #b78591;
+    color: #671729;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
-    background-color: #e1edf2;
-    color: #333333;
+    background-color: #D8A7B1;
+    color: hsl(0, 0%, 0%);
     padding: 1em;
     width: 100%;
-    font-weight: 300;
+    font-weight: 500;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
