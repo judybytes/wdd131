@@ -1,16 +1,14 @@
-/* styles/temples-large.css */  
+/* Styles for screens wider than 600px */
+@media (min-width: 601px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
 
-/* Styles for screens wider than 600px */  
-@media (min-width: 601px) {  
-    .gallery {  
-        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */  
-    }  
+    #nav-menu {
+        display: flex; /* Show menu on larger screens */
+    }
 
-    #nav-menu {  
-        display: flex; /* Show menu on larger screens */  
-    }  
-
-    #hamburger {  
-        display: none; /* Hide hamburger on larger screens */  
-    }  
+    #hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
 }
