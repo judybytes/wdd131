@@ -1,0 +1,95 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background-color: #003580;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+section {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.data, .weather {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data header, .weather header {
+  background-color: #003580;
+  color: white;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+section h2 {
+  margin: 0;
+}
+
+.icon {
+  font-size: 1.5em;
+  color: #f9a825;
+  margin-left: 10px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #003580;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer header {
+  background-color: #002244;
+  color: white;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Media Query for Wider Screens */
+@media (min-width: 768px) {
+  .info-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .data, .weather {
+    width: 48%;
+  }
+}

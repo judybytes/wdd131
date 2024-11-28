@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Africa</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>South Africa</h1>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Welcome to South Africa</h2> <!-- Added heading -->
+      <picture>
+        <source srcset="images/south-africa-large.webp" media="(min-width: 768px)">
+        <img src="images/south-africa-small.webp" alt="Beautiful landscape of South Africa" class="hero-image">
+      </picture>
+    </section>
+
+    <!-- Data and Weather Sections with Headers -->
+    <div class="info-container">
+      <section class="data">
+        <header>
+          <h2>Data</h2>
+        </header>
+        <ul>
+          <li><strong>Area:</strong> 1,221,037 sq km</li>
+          <li><strong>Population:</strong> 59,392,000</li>
+          <li><strong>Capital:</strong> Pretoria (Administrative)</li>
+          <li><strong>Languages:</strong> English, Zulu, Afrikaans, and others</li>
+          <li><strong>Currency:</strong> South African Rand</li>
+          <li><strong>Time Zone:</strong> UTC+2</li>
+          <li><strong>Calling Code:</strong> +27</li>
+          <li><strong>Internet TLD:</strong> .za</li>
+        </ul>
+      </section>
+
+      <section class="weather">
+        <header>
+          <h2>Weather <span class="icon">☀️</span></h2>
+        </header>
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temperature">20 °C</span></li>
+          <li><strong>Conditions:</strong> Sunny</li>
+          <li><strong>Wind:</strong> <span id="windSpeed">10 km/h</span></li>
+          <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>©2024 🌸 Dieketseng J Motsetse 🌸 South Africa</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
+
+
+
+
