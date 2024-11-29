@@ -93,3 +93,17 @@ footer p {
     width: 48%;
   }
 }
+
+/* :root for global CSS variables */
+:root {
+  --primary-color: #003580;
+  --secondary-color: #f4f4f4;
+}
+
+/* ::after for additional content (if needed) */
+.weather header::after {
+  content: " Weather Info";
+  color: #f9a825;
+  font-weight: bold;
+}
+
