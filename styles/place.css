@@ -8,8 +8,8 @@ body {
 }
 
 header {
-  background-color: #003580;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: #fff; /* Maintain contrast */
   padding: 10px 0;
   text-align: center;
 }
@@ -56,10 +56,9 @@ section h2 {
   margin: 0;
 }
 
-.icon {
-  font-size: 1.5em;
-  color: #f9a825;
-  margin-left: 10px;
+.icon img {
+  width: 30px;
+  height: 30px;
 }
 
 /* Footer Styling */
@@ -98,6 +97,15 @@ footer p {
 :root {
   --primary-color: #003580;
   --secondary-color: #f4f4f4;
+  --highlight-color: #f9a825; /* Example additional variable */
+}
+
+@media (min-width: 768px) {
+  .weather header::after {
+    content: " ☀️";
+    font-size: 1.5em;
+    color: var(--highlight-color);
+  }
 }
 
 /* ::after for additional content (if needed) */
@@ -106,4 +114,5 @@ footer p {
   color: #f9a825;
   font-weight: bold;
 }
+
 
