@@ -1,15 +1,16 @@
 /* Base Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   color: #333;
+  background-color: #f9f9f9;
 }
 
 header {
-  background-color: var(--primary-color);
-  color: #fff; /* Maintain contrast */
+  background-color: #003580;
+  color: #fff;
   padding: 10px 0;
   text-align: center;
 }
@@ -24,12 +25,6 @@ header {
   object-fit: cover;
 }
 
-section {
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
 .info-container {
   display: flex;
   flex-direction: column;
@@ -38,7 +33,7 @@ section {
 }
 
 .data, .weather {
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -52,16 +47,17 @@ section {
   text-align: center;
 }
 
-section h2 {
-  margin: 0;
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.icon img {
-  width: 30px;
-  height: 30px;
+.weather-icon {
+  width: 60px;
+  height: 60px;
 }
 
-/* Footer Styling */
 footer {
   background-color: #003580;
   color: white;
@@ -70,18 +66,10 @@ footer {
   margin-top: 20px;
 }
 
-footer header {
-  background-color: #002244;
-  color: white;
-  padding: 10px;
-  border-radius: 8px 8px 0 0;
-}
-
 footer p {
   margin: 5px 0;
 }
 
-/* Media Query for Wider Screens */
 @media (min-width: 768px) {
   .info-container {
     flex-direction: row;
@@ -93,26 +81,12 @@ footer p {
   }
 }
 
-/* :root for global CSS variables */
+/* CSS Variables */
 :root {
   --primary-color: #003580;
   --secondary-color: #f4f4f4;
-  --highlight-color: #f9a825; /* Example additional variable */
+  --highlight-color: #f9a825;
 }
 
-@media (min-width: 768px) {
-  .weather header::after {
-    content: " ☀️";
-    font-size: 1.5em;
-    color: var(--highlight-color);
-  }
-}
-
-/* ::after for additional content (if needed) */
-.weather header::after {
-  content: " Weather Info";
-  color: #f9a825;
-  font-weight: bold;
-}
 
 

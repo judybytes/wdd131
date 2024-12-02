@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive and filterable temple album.">
+    <meta name="author" content="Dieketseng J Motsetse">
+    <title>Filtered Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Filtered Temple Album</h1>
+        <nav>
+            <button id="hamburger" aria-label="Toggle navigation menu">☰</button>
+            <ul id="nav-menu" class="hidden" aria-hidden="true">
+                <li><button data-filter="home">Home</button></li>
+                <li><button data-filter="old">Old</button></li>
+                <li><button data-filter="new">New</button></li>
+                <li><button data-filter="large">Large</button></li>
+                <li><button data-filter="small">Small</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Temple Gallery</h2> 
+        <div id="gallery" class="gallery">
+            <!-- Temple cards will be dynamically injected here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Dieketseng J Motsetse. <br>
+        Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+

@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #4B0082; /* Purple header background */
+    background-color: #4B0082;
     color: white;
     padding: 1.5rem 0;
 }
@@ -29,35 +29,32 @@ nav {
     color: white;
     font-size: 2rem;
     cursor: pointer;
-    display: inline-block;
 }
 
 #nav-menu {
     list-style: none;
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .hidden {
-    display: none; /* Use class for hiding menu */
+    display: none;
 }
 
-#nav-menu li {
-    display: inline;
-}
-
-#nav-menu li a {
-    text-decoration: none;
+#nav-menu button {
+    background: none;
+    border: none;
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-#nav-menu li a:hover {
-    color: #FFD700; /* Gold color for hover effect */
+#nav-menu button:hover {
+    color: #FFD700;
 }
 
 main h2 {
@@ -68,33 +65,37 @@ main h2 {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Default to single column */
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
     max-width: 900px;
     margin: auto;
     padding: 1rem;
 }
 
-figure {
-    margin: 0;
+.card {
     background-color: white;
     border: 2px solid #4B0082;
     border-radius: 5px;
     overflow: hidden;
-    padding: 0.5rem;
+    padding: 1rem;
+    text-align: left;
 }
 
-figure img {
+.card img {
     width: 100%;
     height: auto;
     display: block;
+    border-bottom: 2px solid #4B0082;
 }
 
-figcaption {
-    font-size: 1rem;
-    font-weight: bold;
+.card h3 {
     color: #4B0082;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.card p {
+    margin: 0.3rem 0;
+    color: #333;
 }
 
 /* Footer Styling */
@@ -110,3 +111,11 @@ footer p {
     line-height: 1.6;
     font-size: 0.9rem;
 }
+
+/* Responsive Styling */
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
