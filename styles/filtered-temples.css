@@ -44,19 +44,20 @@ nav {
     display: none;
 }
 
-#nav-menu button {
+#nav-menu a {
     background: none;
-    border: none;
+    text-decoration: none; /* Make sure links are not underlined */
     color: white;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
 }
 
-#nav-menu button:hover {
-    color: #FFD700;
+#nav-menu a:hover {
+    color: #FFD700; /* Ensure hover effect is present */
 }
 
+/* Main section */
 main h2 {
     font-size: 1.8rem;
     color: #4B0082;
@@ -118,4 +119,5 @@ footer p {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 
