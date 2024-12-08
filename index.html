@@ -3,70 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Dieketseng Motsetse: A student portfolio showcasing web development skills in HTML, CSS, and JavaScript.">
     <meta name="author" content="Dieketseng Judith Motsetse">
-    <title>WDD 131 - Dynamic Web Fundamentals - Dieketseng Judith Motsetse</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@100;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css"> <!-- Link to CSS file -->
-    <script src="scripts/getdates.js" defer></script>
+    <title>Portfolio - Dieketseng Judith Motsetse</title>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - Dieketseng Judith Motsetse</h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - Dieketseng Judith Motsetse</h1>
         <nav>
-            <a href="https://www.linkedin.com/in/dieketsengmotsetse">LinkedIn</a>
-            <a href="https://byui.instructure.com/">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p7#p7">Scripture</a>
-            <a href="#projects">Projects</a>
+            <a href="https://www.linkedin.com/in/dieketsengmotsetse" target="_blank">LinkedIn</a> |
+            <a href="https://www.byui.edu/ilearn" target="https://my.byui.edu/external/login?redirectTo=%2Fdashboard">I-Learn</a> |
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/8?lang=eng&id=p11#p11" target="_blank">Scripture</a> |
+            <a href="project/siteplan.html">Final Project</a>
         </nav>
     </header>
-
     <main>
-        <section class="card" id="about">
-            <div class="about me box card">
-                <h2>About Me</h2>
-                <p>
-                    Hi there! I'm Dieketseng Judith Motsetse, a passionate web development student from Vanderbijlpark, South Africa. I'm eager to explore the exciting world of coding. I'm particularly interested in crafting user-friendly and visually appealing websites. In addition to coding, I love to cook and spend time with my family. Through this course, I hope to enhance my skills in HTML, CSS, and JavaScript, and ultimately contribute to the creation of innovative web solutions.
-                </p>
+        <!-- About Me Section -->
+        <section class="card" id="About-Me">
+            <h2>About Me</h2>
+            <div class="content">
+                <div class="description">
+                    <p>My name is Dieketseng Judith Motsetse. I was born in South Africa. I am currently studying software development at BYU-Idaho through Pathway Connect. I have recently completed my ALX VA training and a few online courses on social media management and dropshipping. I aspire to start a freelancing VA business and build my brand on social media.</p>
+                </div>
+                <div class="image">
+                    <img src="images/profile.jpg" alt="Photo of Dieketseng Judith Motsetse">
+                </div>
             </div>
-            <img src="images/about-me.jpg" alt="About me image" class="card-img">
         </section>
 
-        <section class="card" id="projects">
+        <!-- South Africa Section -->
+        <section class="card" id="South-Africa">
+            <h2>South Africa</h2>
+            <div class="content">
+                <div class="description">
+                    <p>South Africa is located at the southernmost tip of Africa and is known for its diversity of cultures, languages, and breathtaking landscapes. It is home to famous landmarks such as Table Mountain, Kruger National Park, and the Cape of Good Hope. South Africa is also renowned for its rich history, including the legacy of Nelson Mandela and the fight for freedom.</p>
+                </div>
+                <div class="image">
+                    <img src="images/south-africa.jpeg" alt="Flag of South Africa">
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Dev Resources Section -->
+        <section class="card" id="Web-Dev-Resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://placeholder.com/" target="_blank">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+
+        <!-- Mini Projects Section -->
+        <section class="card" id="Mini-Projects">
             <h2>My Projects</h2>
-            <div class="project-content">
-                <!-- Project description -->
-                <div class="project-description">
-                    <p>Here are some of my recent projects that showcase my skills in front-end development and design. I have worked on various projects that focus on HTML, CSS, and JavaScript to create engaging and functional websites.</p>
+            <div class="projects-content">
+                <div class="projects-description">
+                    <p>Here are some of my recent projects that showcase my skills in front-end development and design. I have worked on various projects focusing on HTML, CSS, and JavaScript to create engaging and functional websites.</p>
                 </div>
-                
-                <!-- Project image -->
-                <div class="project-image">
-                    <img src="images/projects.webp" alt="Projects image">
+                <div class="projects-image">
+                    <img src="images/projects.webp" alt="Mini Projects">
                 </div>
             </div>
-            
-            <!-- Anchor links for each project -->
-            <div class="project-links">
-                <a href="filtered-temples.html">Temple Album</a> |
-                <a href="place.html">Country page</a> |
-                <a href="#project3">Project 3</a>
+            <div class="mini-project-links">
+                <a href="filtered-temples.html" target="_blank">Temple Album</a> |
+                <a href="place.html" target="_blank">Country Page</a> |
+                <a href="form.html" target="_blank">Product Review Form</a>
             </div>
         </section>
-
-        <!-- Replace empty sections with div elements -->
-        <div id="project1"></div>
-        <div id="project2"></div>
-        <div id="project3"></div>
     </main>
-
     <footer>
-        <p>&copy; <span id="currentyear"></span> Dieketseng Motsetse, South Africa</p>
-        <p id="lastModified"></p>
+        <p>©2024 🌸 Dieketseng Judith Motsetse 🌸 South Africa</p>
+        <p>Last Modification: 12/08/2024</p>
     </footer>
-
 </body>
 </html>
