@@ -16,7 +16,7 @@
         <form id="product-review-form" action="review.html" method="get">
             <!-- Product Name -->
             <label for="product-name">Product Name <span class="required">*</span></label>
-            <select id="product-name" name="product-name" required>
+            <select id="product-name" name="product-name" required aria-required="true">
                 <option value="" disabled selected>Select a Product...</option>
             </select>
 
@@ -25,29 +25,29 @@
                 <legend>Overall Rating <span class="required">*</span></legend>
                 <label>
                     <input type="radio" name="rating" value="1" required>
-                    ☆
+                    1 Star
                 </label>
                 <label>
                     <input type="radio" name="rating" value="2">
-                    ☆☆
+                    2 Stars
                 </label>
                 <label>
                     <input type="radio" name="rating" value="3">
-                    ☆☆☆
+                    3 Stars
                 </label>
                 <label>
                     <input type="radio" name="rating" value="4">
-                    ☆☆☆☆
+                    4 Stars
                 </label>
                 <label>
                     <input type="radio" name="rating" value="5">
-                    ☆☆☆☆☆
+                    5 Stars
                 </label>
             </fieldset>
 
             <!-- Date of Installation -->
             <label for="installation-date">Date of Installation <span class="required">*</span></label>
-            <input type="date" id="installation-date" name="installation-date" required>
+            <input type="date" id="installation-date" name="installation-date" required aria-required="true">
 
             <!-- Useful Features -->
             <fieldset>
@@ -85,7 +85,6 @@
     <footer>
         <p>© 2024 Dieketseng J Motsetse. All Rights Reserved.</p>
     </footer>
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>
-
