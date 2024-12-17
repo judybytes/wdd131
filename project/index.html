@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa Travel & Culture</title>
+    <meta name="description" content="Explore South Africa's vibrant culture, stunning landscapes, and diverse wildlife. Plan your adventure.">
+    <meta name="keywords" content="South Africa, travel, culture, safari, wildlife, Cape Town, Kruger">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT_CODE.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpeg" alt="South Africa Travel & Culture Logo">
+        </a>
+        <h1>South Africa: A Journey of Discovery</h1>
+        <nav>
+            <a href="index.html" aria-label="Home">Home</a>
+            <a href="culture.html" aria-label="Culture & Heritage">Culture & Heritage</a>
+            <a href="travel.html" aria-label="Travel Guide">Travel Guide</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/table-mountain.jpg" alt="Table Mountain, Cape Town" loading="lazy">
+            <div class="hero-content">
+                <h2>Welcome to South Africa!</h2>
+                <p>Immerse yourself in the vibrant culture, breathtaking landscapes, and diverse wildlife.</p>
+                <a href="travel.html" class="explore-btn">Explore Now</a>
+            </div>
+        </section>
+
+        <section class="highlight-grid">
+            <h2>Explore South Africa</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="culture.html">
+                        <img src="images/cultural-dance.jpg" alt="Traditional South African dance" loading="lazy" onload="this.classList.add('loaded')">
+                        <h3>Culture & Heritage</h3>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="travel.html">
+                        <img src="images/kruger-national-park.jpg" alt="Wildlife safari in Kruger" loading="lazy" onload="this.classList.add('loaded')">
+                        <h3>Wildlife & Nature</h3>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="culture.html#cuisine">
+                        <img src="images/south-african-cuisine.jpg" alt="Traditional South African food" loading="lazy" onload="this.classList.add('loaded')">
+                        <h3>Food & Cuisine</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <div id="testimonials"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dieketseng Judith Motsetse. All rights reserved. </p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
+
